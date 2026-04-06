@@ -1,0 +1,101 @@
+/* Variable de CSS - Requisito B */
+:root {
+    --color-principal: #ff00ff; /* Fucsia */
+    --color-fondo: #f0f2f5;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Montserrat', sans-serif; /* Google Font - Requisito B */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-cv {
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.encabezado {
+    text-align: center;
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-principal);
+}
+
+.nombre {
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.seccion {
+    margin-top: 30px;
+}
+
+h2 {
+    color: var(--color-principal);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.lista-habilidades {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.habilidad {
+    background: #333;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-campo {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-enviar {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none; /* Se activa con JS */
+}
