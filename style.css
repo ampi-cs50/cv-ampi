@@ -5,25 +5,22 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Montserrat-Local', sans-serif;
-}
 /* Variable de CSS - Requisito B */
 :root {
-    --color-principal: #ff00ff; /* Fucsia */
-    --color-fondo: #f0f2f5;
+    --primary-color: #ff00ff; /* Fucsia */
+    --background-color: #f0f2f5;
 }
 
 body {
-    background-color: var(--color-fondo);
-    font-family: 'Montserrat', sans-serif; /* Google Font - Requisito B */
+    background-color: var(--background-color);
+    font-family: 'Montserrat-Local', sans-serif; /* Usando la fuente local - Requisito B */
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-.contenedor-cv {
+.cv-container {
     background-color: white;
     max-width: 800px;
     width: 100%;
@@ -32,43 +29,62 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.encabezado {
+.header {
     text-align: center;
-    border-bottom: 2px solid var(--color-principal);
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 20px;
 }
 
-.foto-perfil {
+.profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--color-principal);
+    border: 3px solid var(--primary-color);
 }
 
-.nombre {
+.name {
     margin: 15px 0 5px;
     color: #333;
 }
 
-.seccion {
+.job-title {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.section {
     margin-top: 30px;
 }
 
 h2 {
-    color: var(--color-principal);
+    color: var(--primary-color);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.lista-habilidades {
+.job-entry {
+    margin-bottom: 15px;
+}
+
+.link, .link-email {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.link:hover, .link-email:hover {
+    text-decoration: underline;
+}
+
+.skills-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     list-style: none;
     padding: 0;
 }
 
-.habilidad {
+.skill-item {
     background: #333;
     color: white;
     padding: 5px 15px;
@@ -76,20 +92,24 @@ h2 {
     font-size: 0.8rem;
 }
 
-.formulario {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.input-campo {
+.input-field {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.btn-enviar {
-    background-color: var(--color-principal);
+.message-area {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px;
@@ -97,7 +117,11 @@ h2 {
     cursor: pointer;
 }
 
-.btn-flotante {
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.floating-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
