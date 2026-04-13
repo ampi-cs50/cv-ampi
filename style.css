@@ -5,124 +5,107 @@
     font-style: normal;
 }
 
+body {
+    font-family: 'Montserrat-Local', sans-serif;
+}
+
 :root {
-    --primary-color: #ff00ff;
-    --background-color: #f0f2f5;
+    --color-principal: #ff00ff;
+    --color-fondo: #f0f2f5;
 }
 
 body {
-    background-color: var(--background-color);
-    font-family: 'Montserrat-Local', sans-serif;
+    background-color: var(--color-fondo);
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 1.25rem;
+    padding: clamp(10px, 5vw, 20px);
     display: flex;
     justify-content: center;
 }
 
-.cv-container {
+.contenedor-cv {
     background-color: white;
-    max-width: 50rem;
-    width: 90%;
-    padding: 2.5rem;
-    border-radius: 0.625rem;
-    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: clamp(20px, 8vw, 40px);
+    border-radius: clamp(5px, 2vw, 10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.header {
+.encabezado {
     text-align: center;
-    border-bottom: 0.125rem solid var(--primary-color);
-    padding-bottom: 1.25rem;
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: clamp(10px, 4vw, 20px);
 }
 
-.profile-picture {
-    width: 9.375rem;
-    height: 9.375rem;
+.foto-perfil {
+    width: clamp(100px, 30vw, 150px);
+    height: clamp(100px, 30vw, 150px);
     border-radius: 50%;
     object-fit: cover;
-    border: 0.1875rem solid var(--primary-color);
+    border: 3px solid var(--color-principal);
 }
 
-.name {
-    margin: 0.9375rem 0 0.3125rem;
+.nombre {
+    margin: clamp(10px, 3vw, 15px) 0 5px;
     color: #333;
-    font-size: 2rem;
 }
 
-.job-title {
-    color: #666;
-    font-size: 1.1rem;
-}
-
-.section {
-    margin-top: 1.875rem;
+.seccion {
+    margin-top: clamp(15px, 5vw, 30px);
 }
 
 h2 {
-    color: var(--primary-color);
-    font-size: 1.2rem;
+    color: var(--color-principal);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     text-transform: uppercase;
 }
 
-.job-entry {
-    margin-bottom: 0.9375rem;
-}
-
-.link, .link-email {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.skills-list {
+.lista-habilidades {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem;
+    gap: clamp(5px, 2vw, 10px);
     list-style: none;
     padding: 0;
 }
 
-.skill-item {
+.habilidad {
     background: #333;
     color: white;
-    padding: 0.3125rem 0.9375rem;
-    border-radius: 1.25rem;
-    font-size: 0.8rem;
+    padding: 5px clamp(10px, 3vw, 15px);
+    border-radius: 20px;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
 }
 
-.contact-form {
+.formulario {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    gap: clamp(5px, 2vw, 10px);
 }
 
-.input-field {
-    padding: 0.625rem;
-    border: 0.0625rem solid #ccc;
-    border-radius: 0.3125rem;
-    font-size: 1rem;
+.input-campo {
+    padding: clamp(8px, 2vw, 10px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.message-area {
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: var(--primary-color);
+.btn-enviar {
+    background-color: var(--color-principal);
     color: white;
     border: none;
-    padding: 0.625rem;
-    border-radius: 0.3125rem;
+    padding: clamp(8px, 2vw, 10px);
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
 }
 
-.floating-btn {
+.btn-flotante {
     position: fixed;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: clamp(10px, 4vw, 20px);
+    right: clamp(10px, 4vw, 20px);
     background: #333;
     color: white;
     border: none;
-    padding: 0.625rem 1.25rem;
-    border-radius: 1.875rem;
+    padding: clamp(8px, 2vw, 10px) clamp(15px, 4vw, 20px);
+    border-radius: 30px;
     cursor: pointer;
+    display: none;
 }
