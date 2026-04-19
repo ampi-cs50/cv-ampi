@@ -60,19 +60,19 @@ body {
 
 
 h2 {
-    color: var(--color-principal);
+    color: var(--primary-color);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.lista-habilidades {
+.skills-list {
     display: flex;
     gap: 10px;
     list-style: none;
     padding: 0;
 }
 
-.habilidad {
+.skills {
     background: #333;
     color: white;
     padding: 5px 15px;
@@ -80,20 +80,20 @@ h2 {
     font-size: 0.8rem;
 }
 
-.formulario {
+.form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.input-campo {
+.input-field {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.btn-enviar {
-    background-color: var(--color-principal);
+.btn-send {
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px;
@@ -101,7 +101,7 @@ h2 {
     cursor: pointer;
 }
 
-.btn-flotante {
+.floating-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
