@@ -18,22 +18,33 @@ body {
     background-color: var(--color-fondo);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+<<<<<<< Updated upstream
     padding: clamp(10px, 5vw, 20px);
+=======
+    padding: 1.25rem;
+>>>>>>> Stashed changes
     display: flex;
     justify-content: center;
 }
 
 .contenedor-cv {
     background-color: white;
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
+<<<<<<< Updated upstream
     padding: clamp(20px, 8vw, 40px);
     border-radius: clamp(5px, 2vw, 10px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+=======
+    padding: 2.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.1);
+>>>>>>> Stashed changes
 }
 
 .encabezado {
     text-align: center;
+<<<<<<< Updated upstream
     border-bottom: 2px solid var(--color-principal);
     padding-bottom: clamp(10px, 4vw, 20px);
 }
@@ -41,18 +52,35 @@ body {
 .foto-perfil {
     width: clamp(100px, 30vw, 150px);
     height: clamp(100px, 30vw, 150px);
+=======
+    border-bottom: 1.125rem solid var(--color-principal);
+    padding-bottom: 1.25rem;
+}
+
+.foto-perfil {
+    width: 9.375rem;
+    height: 9.375rem;
+>>>>>>> Stashed changes
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--color-principal);
+    border: 0.1875rem solid var(--color-principal);
 }
 
 .nombre {
+<<<<<<< Updated upstream
     margin: clamp(10px, 3vw, 15px) 0 5px;
+=======
+    margin: 0.9375rem 0 0.3125rem;
+>>>>>>> Stashed changes
     color: #333;
 }
 
 .seccion {
+<<<<<<< Updated upstream
     margin-top: clamp(15px, 5vw, 30px);
+=======
+    margin-top: 1.875rem;
+>>>>>>> Stashed changes
 }
 
 h2 {
@@ -63,7 +91,11 @@ h2 {
 
 .lista-habilidades {
     display: flex;
+<<<<<<< Updated upstream
     gap: clamp(5px, 2vw, 10px);
+=======
+    gap: 0.625rem;
+>>>>>>> Stashed changes
     list-style: none;
     padding: 0;
 }
@@ -71,14 +103,21 @@ h2 {
 .habilidad {
     background: #333;
     color: white;
+<<<<<<< Updated upstream
     padding: 5px clamp(10px, 3vw, 15px);
     border-radius: 20px;
     font-size: clamp(0.7rem, 2vw, 0.8rem);
+=======
+    padding: 0.3125rem 0.9375rem;
+    border-radius: 1.25rem;
+    font-size: 0.8rem;
+>>>>>>> Stashed changes
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
     gap: clamp(5px, 2vw, 10px);
 }
 
@@ -86,19 +125,34 @@ h2 {
     padding: clamp(8px, 2vw, 10px);
     border: 1px solid #ccc;
     border-radius: 5px;
+=======
+    gap: 0.625rem;
+}
+
+.input-campo {
+    padding: 0.625rem;
+    border: 0.625rem solid #ccc;
+    border-radius: 1rem;
+>>>>>>> Stashed changes
 }
 
 .btn-enviar {
     background-color: var(--color-principal);
     color: white;
     border: none;
+<<<<<<< Updated upstream
     padding: clamp(8px, 2vw, 10px);
     border-radius: 5px;
+=======
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+>>>>>>> Stashed changes
     cursor: pointer;
 }
 
 .btn-flotante {
     position: fixed;
+<<<<<<< Updated upstream
     bottom: clamp(10px, 4vw, 20px);
     right: clamp(10px, 4vw, 20px);
     background: #333;
@@ -106,6 +160,15 @@ h2 {
     border: none;
     padding: clamp(8px, 2vw, 10px) clamp(15px, 4vw, 20px);
     border-radius: 30px;
+=======
+    bottom: 1.25rem;
+    right: 1.25rem;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+>>>>>>> Stashed changes
     cursor: pointer;
     display: none;
 }
