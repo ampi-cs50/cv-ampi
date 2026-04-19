@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Profesional - Trabajo Práctico 1</title>
-    <!--Google Font-->
+    <!-- Importando Google Fonts - Requisito B -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,8 +22,49 @@
         <section class="seccion">
             <h2>Sobre mí</h2>
             <p>Programador de día, rascador de sillones y acróbata de parkour de madrugada. Mi lenguaje favorito es el Meow-SQL. Busco oportunidades donde el código sea limpio y el atún sea abundante. Nota: Si me ves mirando a la nada, estoy procesando datos.<br> 
-            ACEPTO ATÚN COMO FORMA DE PAGO</p>
-        </section>
+                ACEPTO ATÚN COMO FORMA DE PAGO</p>
+            </section>
 
         <!-- Experiencia/Formación - Requisito A -->
         <section class="seccion">
+            <h2>Experiencia Profesional</h2>
+            <div class="empleo">
+                <p><strong>Desarrollador Junior</strong></p>
+                <!-- Link a empresa y email - Requisito A -->
+                <p>Empresa: <a href="https://www.google.com" target="_blank" class="enlace">Miau Solutions S.A.</a></p>
+                <p>Contacto: <a href="mailto:rrhh@miausolutions.com" class="enlace-email">rrhh@tmiausolutions.com</a></p>
+                <p><strong>Master en Seducción</strong></p>
+                <p>Empresa: <a href="https://uniseduccion.com.ar" target="_blank" class="enlace">UniSeducción S.A.</a></p>
+                <p>Contacto: <a href="mailto:uniseduccion@gmail.com" class="enlace-email">uniseduccion@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- Habilidades - Requisito A -->
+        <section class="seccion">
+            <h2>Habilidades</h2>
+            <ul class="lista-habilidades">
+                <li class="habilidad">MiauSQL (Databases)</li>
+                <li class="habilidad">Python</li>
+                <li class="habilidad">Napping</li>
+                <li class="habilidad">Seduccion y Persuasión</li>
+            </ul>
+        </section>
+
+        <!-- Contacto - Requisito A -->
+        <section class="seccion">
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Nombre" class="input-campo" required>
+                <input type="email" placeholder="Email" class="input-campo" required>
+                <textarea placeholder="Mensaje" class="input-campo mensaje" rows="4"></textarea>
+                <button type="button" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Botón con funcionalidad JS - Requisito C -->
+    <button id="btnIrArriba" class="btn-flotante">Volver arriba</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
