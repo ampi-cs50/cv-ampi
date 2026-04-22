@@ -5,27 +5,14 @@
     font-style: normal;
 }
 
-body {
-    font-family: 'Montserrat-Local', sans-serif;
-}
-
 :root {
-    --color-principal: #ff00ff;
-    --color-fondo: #f0f2f5;
-}
-
-body {
-    background-color: var(--color-fondo);
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 1.25rem;
-    --primary-color: #ff00ff; 
+    --primary-color: #ff00ff;
     --bg-color: #f0f2f5;
 }
 
 body {
     background-color: var(--bg-color);
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat-Local', sans-serif; 
     margin: 0;
     padding: 1.25rem; 
     display: flex;
@@ -43,39 +30,16 @@ body {
 
 .header-section{
     text-align: center;
-    border-bottom: 1.125rem solid var(--color-principal);
+    border-bottom: 1.125rem solid var(--primary-color);
     padding-bottom: clamp(0.625rem, 4vw, 1.25rem);
 }
 
-.foto-perfil {
-    width: clamp(6.25rem, 30vw, 9.375rem);
-    height: clamp(6.25rem, 30vw, 9.375rem);
-    border-bottom: 1.125rem solid var(--color-principal);
-    padding-bottom: 1.25rem;
-}
-
-.foto-perfil {
-    width: 9.375rem;
-    height: 9.375rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.1875rem solid var(--color-principal);
-}
-
-.nombre {
-    margin: 0.9375rem 0 0.3125rem;
-    color: #333;
-}
-
-.seccion {
-    margin-top: 1.875rem;
-}
-
 h2 {
-    color: var(--color-principal);
+    color: var(--primary-color);
     font-size: clamp(1rem, 4vw, 1.2rem);
     border-bottom: 0.125rem solid var(--primary-color);
     padding-bottom: 1.25rem;
+    text-transform: uppercase;
 }
 
 .profile-img {
@@ -93,12 +57,6 @@ h2 {
 
 .content-section {
     margin-top: 1.875rem;
-}
-
-h2 {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    text-transform: uppercase;
 }
 
 .skills-list {
@@ -119,10 +77,9 @@ h2 {
     cursor: pointer;
 }
 
-.skill-item:hover{
+.skills-item:hover{
     transform: scale(1.15); 
     background-color: var(--primary-color);
-    color: white;
 }
 
 .contact-form{
@@ -131,24 +88,12 @@ h2 {
     gap: clamp(0.31rem, 2vw, 0.625rem);
 }
 
-.input-campo {
+.form-input {
     padding: clamp(0.5rem, 2vw, 0.625rem);
     border: 0.625rem solid #ccc;
-    border-radius: 0.31rem;
-    gap: 0.625rem;
-}
-
-.input-campo {
-    padding: 0.625rem;
-    border: 0.625rem solid #ccc;
-    border-radius: 1rem;
-    gap: 0.626rem;
-}
-
-.form-input{
-    padding: 0.625rem;
-    border: 0.06rem solid #ccc;
-    border-radius: 0.31rem;
+    border-radius: 0.5rem;
+    color: #333; 
+    background-color: white;
 }
 
 .send-btn {
@@ -158,28 +103,15 @@ h2 {
     padding: 0.625rem;
     border-radius: 0.31rem;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.btn-flotante {
-    position: fixed;
-    background: #333;
-    color: white;
-    border: none;
-    bottom: 1.25rem;
-    right: 1.25rem;
-    padding: 0.625rem 1.25rem;
-    border-radius: 1.875rem;
-    cursor: pointer;
-    display: none;
-}
 .send-btn:hover {
     background-color: var(--primary-color);
     transform: scale(1.1); 
 }
 
 .scrollToTop{
-    margin: 2rem auto 0;
+    position: fixed;
     bottom: 2rem;
     right: 2rem;
     background: #333;
