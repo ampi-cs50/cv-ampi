@@ -1,19 +1,19 @@
-// Requisito C: Funcionalidad de botón visible
-const boton = document.getElementById('btnIrArriba');
 
-// Mostrar el botón cuando el usuario baja en la página
+const boton = document.getElementById('scrollToTop');
+
+
 window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        boton.style.display = "block";
-    } else {
-        boton.style.display = "none";
+    if (boton){
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            boton.style.display = "block";
+        } else {
+            boton.style.display = "none";
+        }
     }
 };
 
-// Acción de volver arriba al presionar
-boton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+if (boton){
+    boton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth'});
     });
-});
+}
