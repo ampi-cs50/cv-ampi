@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Montserrat-Local";
-  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -93,7 +92,7 @@ h2 {
 
 .form-input {
   padding: clamp(0.5rem, 2vw, 0.625rem);
-  border: 0.1rem solid #ccc;
+  border: 0.625rem solid #ccc;
   border-radius: 0.5rem;
   color: #333;
   background-color: white;
@@ -108,7 +107,7 @@ h2 {
   cursor: pointer;
 }
 
-.send-btn:hover {
+.send-btn-hover {
   background-color: var(--primary-color);
   transform: scale(1.1);
 }
